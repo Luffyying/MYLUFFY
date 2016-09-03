@@ -1,0 +1,304 @@
+	body{
+		height: 1600px;
+		//overflow: scroll;
+		background: #dcdcdc;
+		//position: relative;
+	}
+	#content{
+		background: #dcdcdc;
+		position: relative;
+		top: 110px;
+	    height: 1500px;
+		width: 100%;
+		// overflow: scroll;
+		z-index:1; 
+
+	}
+	#kind a:hover{
+		color: #000;
+	}
+	#able{
+		position: absolute;
+		top: 30px;
+		left: 150px;
+		background: #fff;
+		width: 705px;
+		height: 110px;
+	}
+	#able li{
+		width: 140px;
+		height: 110px;
+		float: left;
+		border-right: 1px solid #ccc;
+		cursor:pointer;
+	}
+	.conblock{
+		float: left;
+	}
+   .selected{
+	    display: none;
+	}
+	.selected2{
+		  display: block;
+	}
+	#manger{
+		width: 290px;
+		height: 384px;
+		position: absolute;
+		top: 30px;
+		left: 875px;
+		background: #f5f5f5;
+	}
+	#manger a{
+		text-decoration: none;
+	}
+	#manger li{
+		height: 60px;
+		width: 290px;
+		text-align: center;
+		line-height: 60px;
+		border: 1px solid #ccc;
+		cursor:pointer;
+	}
+	#manger .down{
+		position: absolute;
+		top: 1px;
+		left: 220px;
+		height: 71px;
+		width: 70px;
+		border-left: 1px solid #ccc;
+
+	}
+	#exit{
+		width: 290px;//290
+		height: 0px;
+		position: absolute;
+		background: #000;
+		opacity: 0.8;
+		text-align: center;
+		line-height: 62px;
+		color: #fff;
+		cursor:pointer;
+	}
+	#exit a{
+		 text-decoration:none;
+		 color: #fff;
+	}
+	#manger .userinf{
+		height: 72px;
+		text-align: center;
+		line-height: 72px;
+	}
+	.select{
+		background: #fff;
+	}
+	#note{
+		position: absolute;
+		top: 200px;
+		left: 150px;
+		width: 705px;
+		height: 1000px;
+	}
+	.blog-block{
+		left: 0px;
+		width: 705px;
+		//height: 400px;
+		position: absolute;
+	}
+	#blogs .firstli{
+		position: relative;
+		width: 705px;
+		height: 160px;
+		margin-bottom: 30px;
+	}
+	.firstli:after{
+		content: '';
+		width: 595px;
+		height: 0px;
+	}
+	.por{
+		position: absolute;
+		height: 55px;
+		width: 55px;
+
+	}
+	.add{
+		display: none;
+	}
+	.addhei{
+		display: block;
+	}
+	.note-con{
+		position: absolute;
+		left: 80px;
+		width: 565px;
+		//height: 400px;
+		background: #fff;
+		padding:30px;
+		letter-spacing: 1.5px;
+		line-height: 25px;
+		font-size: 14px;
+	}
+	.hid-comment{
+		top: 160px;
+		position: absolute;
+		left: 0px;
+		width: 625px;
+		height: 70px;
+		display: none;
+		//background: red;
+	}
+	.come{
+		height: 500px;
+
+	}
+	.mywords:after{
+		content: '';
+		width: 95px;
+		height: 0px;
+		display: block;
+		font-size: 30px;
+
+	}
+	#user-infors{
+		position: absolute;
+		width: 595px;
+		height: 60px;
+		left: 81px;
+		top: 116px;
+		color: #000;
+		opacity: 0.5;
+		line-height: 40px;
+		text-align: right;
+	}
+	.more{
+		position: absolute;
+		left: 31px;
+	}
+	#user-infors span:hover{
+		cursor:pointer;
+	}
+	.mywords{
+		letter-spacing: 1.5px;
+		line-height: 25px;
+	}
+	.btn{
+		width: 100px;
+		height: 40px;
+		background: #ccc;
+		position: absolute;
+		left: 500px;
+		top: 6px;
+
+	}
+	.displayid{
+		display: none;
+	}
+	#postContent{
+		width: 450px;
+		height: 50px;
+		//border-radius: 20px;
+	}
+	#footer{
+		position: absolute;
+		bottom:0px;
+		width: 100%;
+		height: 100px;
+		background: #ccc;
+	}
+	.mycopy{
+		position: absolute;
+		height: 40px;
+		width: 100%;
+		text-align: center;
+		font-size: 20px;
+	}
+	.hov{
+		float: left;
+		position: absolute;
+	}
+	.init{
+		float: left;
+		position: absolute;
+	}
+	#search{
+		position: absolute;
+		top: 25px;
+		left: 900px;
+	}
+	.pic{
+		position: absolute;	
+	}
+	.sear{
+		position: absolute;
+		left: 950px;
+		width: 200px;
+		top: 47px;
+		outline: none;
+		border: 0;
+		font-size: 20px;
+		background: #404040;
+		color: #fff;
+		display: none;
+	}
+	#search-con{
+		position: absolute;	
+		top: 43px;
+		left: 930px;
+		width: 0;//170px;
+		height: 36px;
+		background: #404040;
+		border-bottom-right-radius: 18px;
+		border-top-right-radius: 18px;
+	}
+	#upload-pic{
+		display: none;
+		height: 400px;
+		width: 550px;
+		background: #fff;
+		position: absolute;
+		top: 200px;
+		left: 50%;
+		margin-left: -275px;
+		z-index:2; 
+	}
+	.mypor{
+		color: #fff;
+		position: absolute;
+		left: -90px;
+		top: 80px;
+		height: 200px;
+		width: 400px;
+		background: #000;
+		opacity: 0.8;
+		z-index: 3;
+		padding:10px;
+		display: none;
+	}
+	.focus{
+		background: green;
+		height: 30px;
+		width: 80px;
+		text-align: center;
+		float: right;
+		font-size: 20px;
+		color: #fff;
+	}
+	#attention{
+		height: 40px;
+		width: 150px;
+		border:2px solid #ccc;
+		background: #fcf;
+		position: fixed;
+		top: 0px;
+		left: 50%;
+		margin-left: -60px;
+		text-align: center;
+		line-height: 40px;
+		display: none;
+		z-index: 5;
+	}
+
+	
+
+	

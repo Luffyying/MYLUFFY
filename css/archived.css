@@ -1,0 +1,106 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+#content{
+	position: relative;
+	width: 100%;
+	height: 250px;
+	background: url('../imgs/bg3.png') repeat;
+}
+.list{
+	//position: absolute;
+}
+.title{
+	margin-bottom: 20px;
+}
+.time{
+	width: 150px;
+	height: 50px;
+	font-size: 23px;
+	margin-left: 250px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	//background: red;
+
+}
+#nav{
+	padding-top: 20px;
+	width: 100%;
+	height: 50px;
+	//text-align: center;
+
+}
+.go-back{
+	margin-left: 350px;
+	text-decoration: none;
+
+}
+.p{
+	background: #fff;
+	padding: 10px;
+}
+.kind{
+
+	margin-right: 20px;
+	font-size: 25px;
+	color: #ccc;
+	text-decoration: none;
+}
+#username{
+	position: absolute;
+	top: 100px;
+	left: 520px;
+	width: 300px;
+	height: 60px;
+	background: #fff;
+	opacity: 0.3;
+	border-radius: 20px;
+	text-align: center;
+	line-height: 60px;
+	font-size: 25px;
+	color: #000;
+}
+#inform{
+	position: absolute;
+	top: 270px;
+	width: 100%;
+	height: 500px;
+	margin-left: 170px;
+}
+#inform li{
+	border-bottom: 1px solid #ccc;
+	height: 40px;
+	background: #eee;
+	width: 1000px;
+	line-height: 40px;
+	color:#000;
+
+}
+#inform li:hover{
+	background:   #F5F5DC ;
+}
+#inform h2{
+	height: 50px;
+	background: #ccc;
+	opacity: 0.6;
+	color: #000;
+	border-radius: 10px;
+	width: 200px;
+	margin-bottom: 20px;
+	text-align: center;
+	line-height: 50px;
+}
+#inform div{
+	margin-bottom: 20px;
+}
+#note{
+	// height: 100px;
+	
+}
