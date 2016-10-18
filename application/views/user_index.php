@@ -2,18 +2,22 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>My Blog Study</title>
+	<title>My Blog Study></title>
 	<base href="<?php echo site_url();?>"/>
+
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/cover.css">
 	<link rel="stylesheet" type="text/css" href="css/user_index.css">
 </head>
 <body>
 <div id='upload-pic'>
-    <form action="user/user_index" method="get" accept-charset="utf-8" enctype="multipart/form-data">
-	添加一张照片：<input type='file' name='file'>
+    <form action="user/user_index" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+	添加一张照片：<input type='file' id='file' name='myfile'>
 	<input type='submit' name='sub'>
+	<!-- <button id='ti'>提交</button> -->
+
 	</form>
+	<button id='unsub'>取消</button>
 </div>
 <div id="cover">
 	<table id="publish">
@@ -56,7 +60,10 @@
 	<div id="content">
 		<div id="able">
 			<ul>
-				<li class="userblock"><img class='hov' src="imgs/upload2.jpg" alt=""></li>
+			    <?php if($pic=='0'){
+			     $pic = 'imgs/upload2.jpg';}
+			    ?>
+				<li class="userblock"><a href=''><img class='hov' src='imgs/<?php echo $pic?>' alt=""></a></li>
 				<li id='mnote' class="conblock"><img class='hov' src="imgs/a1.jpg" alt=""><img class='init' src="imgs/w1.jpg" alt=""></li>
 				<li class="conblock"><img class='hov' src="imgs/a2.jpg" alt=""><img class='init' src="imgs/w2.jpg" alt=""></li>
 				<li class="conblock"><img class='hov' src="imgs/a4.jpg" alt=""><img class='init' src="imgs/w3.jpg" alt=""></li>
@@ -87,7 +94,7 @@
 						<span style='font-size: 20px'><?php echo $blog->blogwriter ?></span>
 						<button class='focus'>+关注</button>
 					</div>
-				    <a class='por' href="user/self_index?writer=<?php echo $blog->blogwriter ?>"><img src="imgs/<?php echo $blog->blogportrait?>.gif" alt="your"></a>
+				    <a class='por' href="user/self_index?writer=<?php echo $blog->blogwriter ?>"><img class='ss' src="imgs/<?php echo $blog->blogportrait?>" alt="your"></a>
 				    
 					<div class='note-con'>
 						<h2><?php echo $blog->title ;?></h2><br/><br/>
@@ -127,6 +134,11 @@
 		$(function(){
 
 			//publish
+			$('#ti').on('click',function(){
+				var n= $("#file");
+                 console.log(n.value);
+				//$.post('user/uploadpic',{name:n},function(){},'text');
+			});
 			$('#submit').on('click',function(){
 				var s = KE.util.getData("content_1");
 				$.post('publish/pub_index',{
@@ -334,7 +346,10 @@
 			$('.userblock').on('click',function(){
 				$('#upload-pic').css('display','block');
 			});
-
+			$('#unsub').on('click',function(){
+				$('#upload-pic').css('display','none');
+			})
+          
 			//look the information of the portrait
 			// $('.por').each(function(){
 			// 	$(this).attr('flag','false');
@@ -367,18 +382,9 @@
 				// 	 $('#attention').css('display','block');
 				// },2000);
 				$('#attention').animate({opacity:['1','swing']},700,function(){
-						
-					});
+											});
                 
 			});
-
-			
-
-
-
-		
-
-
 		})
 	</script>
 </body>

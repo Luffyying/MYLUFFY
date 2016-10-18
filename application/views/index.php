@@ -93,7 +93,10 @@
 	<script src='js/jquery-1.12.2.js'></script>
 	<script>
 	    $(window).on('load',function(){//预加载而非懒加载
-	    	$('#wait').remove();
+	    	setTimeout(function(){
+	    		$('#wait').remove();
+	    	},2000)
+	    	
 	   // });
 		//$(function(){
 			//the change for the bg

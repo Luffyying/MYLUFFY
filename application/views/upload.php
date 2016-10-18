@@ -6,7 +6,8 @@
 	<title>upload file example</title>
 </head>
 <body>
-	<form action="user/index" method="get" accept-charset="utf-8" enctype="multipart/form-data">
+hahaha
+	<!-- <form action="user/index" method="get" accept-charset="utf-8" enctype="multipart/form-data">
 		<table border=0 cellspacing=0 cellpadding=0 align=center width="100%">
 			<tr>
 				<td>
@@ -18,18 +19,18 @@
 				</td>
 			</tr>
 		</table>
-	</form>
+	</form> -->
 </body>
 </html>
 <?php
-   $uploaddir = "./files/";//设置文件保存目录 注意包含/  
-   $type=array("jpg","gif","bmp","jpeg","png");//设置允许上传文件的类型
-   $patch="http://localhost/ha/htdocs/files/";//程序所在路径
-   $file = $_FILES['file'];
-   $name = $file['name'];
-   echo $file;
-   echo $name;
-    echo $uploaddir;
+   // $uploaddir = "./files/";//设置文件保存目录 注意包含/  
+   // $type=array("jpg","gif","bmp","jpeg","png");//设置允许上传文件的类型
+   // $patch="http://localhost/ha/htdocs/files/";//程序所在路径
+   // $file = $_FILES['file'];
+   // $name = $file['name'];
+   // echo $file;
+   // echo $name;
+   //  echo $uploaddir;
    
     // function fileext($filename){
     //     return substr(strrchr($filename, '.'), 1);

@@ -24,6 +24,20 @@ class Blog_model extends CI_Model {
 	 	return false;
 	 }
 	}
+	public function addPic($add,$user_id){
+		$this->db->set('img',$add);
+		$this->db->where('user_id',$user_id);
+		$this->db->update('t_users');
+		if($this->db->affected_rows()>0){
+	 		return true;
+	 	}else{
+	 	return false;
+	 	}
+	}
+	public function add_by_id($user_id){
+		$query = $this->db->get_where('t_users',array('user_id'=>$user_id));
+	 	return $query->row();
+	}
 	public function get_by_writer($user_id){
 		$this->db->select('blog.*');
 		$this->db->from('t_blogs blog');

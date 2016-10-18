@@ -1,3 +1,7 @@
+.ss{
+	height: 55px;
+	width: 55px;
+}
 	body{
 		height: 1600px;
 		//overflow: scroll;
@@ -216,6 +220,8 @@
 	.hov{
 		float: left;
 		position: absolute;
+		height: 110px;
+		width: 140px;
 	}
 	.init{
 		float: left;

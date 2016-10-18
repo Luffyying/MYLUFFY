@@ -132,8 +132,6 @@
 			
 		
 	</div>
-
-	
 	<script src='js/jquery-1.12.2.js'></script>
 	<script type='text/javascript' src='kindeditor/kindeditor-min.js' charset='utf-8'></script>
 	<script>
